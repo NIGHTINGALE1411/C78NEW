@@ -1,0 +1,31 @@
+<html>
+   <button onclick="update()">NEXT </button> 
+<img id="family_member_image" src="https://images-eu.ssl-images-amazon.com/images/I/51-8FZDrnsL._SX198_BO1,204,203,200_QL40_FMwebp_.jpg">
+<h3 id="family_member_name"></h3>
+    <script>
+    var images = ["https://i.postimg.cc/MGn9GJXw/family.jpg","blob:https://web.whatsapp.com/5e87aec9-0775-409b-a4b1-9712bdbddbb2","blob:https://web.whatsapp.com/d5aa3ce5-f7c3-4952-8d24-80a6bb1eef0e","blob:https://web.whatsapp.com/6166b4c5-efc0-4559-8325-60272d900513","blob:https://web.whatsapp.com/6708d002-939f-4e08-8ae5-7fea546191dc" ,"blob:https://web.whatsapp.com/48b9bd86-7626-4bda-96bb-6896bb03c6e3"]
+    var names=["Family Book","KASI VISWANATHAN", "RADHIKA KASI", "NITIKA SHIVANI", "NAINIKA LAKSHMI","APPU(BIRD)"]
+    var i = 0;
+    function update()
+    {
+        i++;
+        var numbers_of_family_member_in_array = 5
+        if(i > numbers_of_family_member_in_array)
+          {
+              i = 0;
+          }
+        
+        //Debug the code to store list of images in updatedImage. Use images[i]
+        var updatedImage =images [i];
+        //Debug the code to store list of names in updatedName. Use names[i]
+        var updatedName =names [i] ;
+     console.log(updatedImage,updatedName)
+        document.getElementById("family_member_image").src = updatedImage;
+        document.getElementById("family_member_name").innerHTML = updatedName;
+    }</script>
+
+</html>
+
+
+
+
